@@ -4,30 +4,42 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
         <meta name="robots" content="noindex, nofollow">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script type="text/javascript" src="./owo.js"></script>
+        <link rel="stylesheet" type="text/css" href="./owo.css">
         <title>OwO</title>
     </head>
     <body>
-        <input type="number" id="user_id" min="1" max="100">
-        <button type="button" onclick="getUserData()">Query</button>
-        <table>
-          <tr>
-            <td>userId</td>
-            <td><span id="cellUserId"> </span></td>
-          </tr>
-          <tr>
-            <td>id</td>
-            <td><span id="cellId"> </span></td>
-          </tr>
-          <tr>
-            <td>title</td>
-            <td><span id="cellTitle"> </span></td>
-          </tr>
-          <tr>
-            <td>body</td>
-            <td><span id="cellBody"> </span></td>
-          </tr>
-        </table>
+      <div class="wrap">
+        <div class="wrap-item">
+          <input type="number" class="pure-group" id="user_id" min="1" max="100">
+        </div>
+        <div class="wrap-item">
+          <button type="button" class="pure-button" onclick="getUserData()">Query</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class=item>
+          <table class="pure-table pure-table-horizontal">
+            <tr>
+              <td>userId</td>
+              <td><span id="cellUserId"> </span></td>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td><span id="cellId"> </span></td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td><span id="cellTitle"> </span></td>
+            </tr>
+            <tr>
+              <td>body</td>
+              <td><span id="cellBody"> </span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </body>
 </html>
